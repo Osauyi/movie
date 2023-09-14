@@ -1,20 +1,24 @@
-import React, { useState, useEffect } from "react"
-import { useParams } from "react-router-dom"
-import Image from 'next/image'
-import Logo from "../../public/assets/Logo.svg"
-import Upcoming from "../../public/assets/Calendar.svg"
-import Home from "../../public/assets/Home.svg"
-import Tv from "../../public/assets/TV Show.svg"
-import Play from "../../public/assets/Play.svg"
-import Logout from "../../public/assets/Logout.svg"
-import MOvie from "../../public/assets/Movie Projector.svg"
-import Imdb from "../../public/assets/imdb.svg"
+'use client' //
+import React, { useState, useEffect } from 'react';
 
-export default function MovieDetails() {
+import Image from 'next/image'
+import Logo from "../../../public/assets/Logo.svg"
+import Upcoming from "../../../public/assets/Calendar.svg"
+import Home from "../../../public/assets/Home.svg"
+import Tv from "../../../public/assets/TV Show.svg"
+import Play from "../../../public/assets/Play.svg"
+import Logout from "../../../public/assets/Logout.svg"
+import MOvie from "../../../public/assets/Movie Projector.svg"
+import Imdb from "../../../public/assets/imdb.svg"
+
+
+
+
+
+export default function MovieDetails({params}) {
 
 
     const [datas, setDatas] = useState([]);
-     const params = useParams()
      useEffect(() => {
 
 fetch(`https://api.themoviedb.org/3/movie/${params.id}?api_key=a26b4a7b9dc5d6f9d60b01b29dfa79ff`)
