@@ -43,7 +43,7 @@ fetch(`https://api.themoviedb.org/3/movie/${params.id}?api_key=a26b4a7b9dc5d6f9d
 
         <div className="themovieDetails">
             <div className="imageBackground">
-                <Image className="backimage" loader={() => srcd} src= {srcd} alt="backgroundposter"  width={900} height={400} />
+                <Image className="backimage" loader={() => srcd} src= {srcd} alt="backgroundposter"  width={900} height={400} unoptimized={true} />
             </div>
             <div className="Details">
             <h2>{datas.title}</h2>
