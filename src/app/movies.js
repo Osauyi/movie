@@ -2,12 +2,12 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import Image from 'next/image'
-import Logo from "../../assets/Logo.svg"
-import Imdb from "../../assets/imdb.svg"
-import Favourite from "../../assets/Favorite.svg"
-import Play from "../../assets/Play.svg"
-import Search from "../../assets/Search.svg"
-import Menu from "../../assets/Menu.svg"
+import Logo from "../../public/assets/Logo.svg"
+import Imdb from "../../public/assets/imdb.svg"
+import Favourite from "../../public/assets/Favorite.svg"
+import Play from "../../public/assets/Play.svg"
+import Search from "../../public/assets/Search.svg"
+import Menu from "../../public/assets/Menu.svg"
 
 
 

@@ -5,10 +5,10 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import Image from 'next/image'
 import Home from "./movies"
 import MovieDetails from './movieDetails';
-import Facebook from "../../assets/facebook.svg"
-import Instagram from "../../assets/instagram.svg"
-import Twitter from "../../assets/twitter.svg"
-import Youtube from "../../assets/youtube.svg"
+import Facebook from "../../public/assets/facebook.svg"
+import Instagram from "../../public/assets/instagram.svg"
+import Twitter from "../../public/assets/twitter.svg"
+import Youtube from "../../public/assets/youtube.svg"
 
 export default function App() {
   return (
