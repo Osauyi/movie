@@ -22,7 +22,7 @@ fetch(`https://api.themoviedb.org/3/movie/${params.id}?api_key=a26b4a7b9dc5d6f9d
   .then((data) => {setDatas(data)} )
   .catch(err => console.error(err));
 }, [params.id])
-
+    const srcd = `https://image.tmdb.org/t/p/w500/${datas.backdrop_path}`
     return (
 
         <div className="secondbox">
@@ -39,7 +39,7 @@ fetch(`https://api.themoviedb.org/3/movie/${params.id}?api_key=a26b4a7b9dc5d6f9d
 
         <div className="themovieDetails">
             <div className="imageBackground">
-                <img className="backimage"  src= {`https://image.tmdb.org/t/p/w500/${datas.backdrop_path}`} alt="backgroundposter"/>
+                <Image className="backimage" loader={() => srcd} src= {srcd} alt="backgroundposter"  width={900} height={400} />
             </div>
             <div className="Details">
             <h2>{datas.title}</h2>

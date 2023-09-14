@@ -80,13 +80,6 @@
 
 
 
-
-.movieImage{
-  width: 150px;
-  height: 200px;
-  
-}
-
 .movieImage{
   position: relative;
 }
@@ -205,6 +198,4 @@
 
 .backimage{
   border-radius: 8px;
-  width: 80%;
-  height: auto;
 }

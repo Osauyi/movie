@@ -33,7 +33,7 @@ fetch('https://api.themoviedb.org/3/discover/movie?include_adult=false&include_v
 
 
   let MovieList = dataList.slice(0, 10)
-
+  
 
   return (
     <div>
@@ -64,11 +64,13 @@ fetch('https://api.themoviedb.org/3/discover/movie?include_adult=false&include_v
     
     <div className='movie-box'>
        {MovieList.map((movie) => { 
+          const srcs = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
         return(
         <div className='everymovie' key={movie.id} data-testid="movie-card">
         <Link to={`/movie/${movie.id}`}>
         <div className='movie-image'>
-        <img className='movieImage' src = {`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} data-testid="movie-poster" alt='movie-poster'/>
+         
+        <Image className='movieImage' loader={() => srcs} src = {srcs}  data-testid="movie-poster" alt='movie-poster' width={150} height={200}/>
         <Image className='favourite' src={Favourite}  alt="favorite"/>
         </div>
         </Link>
