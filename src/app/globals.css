@@ -1,0 +1,210 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.topbox{
+  background-image: url(../../public/johnwicl.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px 0 120px 10%;
+  filter: brightness(90%);
+  margin-bottom: 40px;
+}
+
+
+.navBar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchbox{
+  width: 50%;
+}
+
+.searchbox > input{
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid white;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: 10px;
+  color: white;
+  position: relative;
+}
+
+.Searchglass{
+  position: absolute;
+  top: 12%;
+  right: 15%;
+}
+
+.signin{
+  display: flex;
+  gap: 8px;
+}
+
+.siginimg{
+    align-self: center;
+}
+
+.signin h2{
+  align-self: center;
+  font-size: 1rem;
+  color: white;
+}
+
+.johnmovie{
+  width: 35%;
+  margin: 30px 0;
+}
+
+.johnmovie h1{
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.johnmovie p{
+  margin-top: 12px;
+  font-size: .8rem;
+  color: white;
+}
+
+.johnrating{
+  display: flex;
+  color: white;
+  gap: 10px;
+}
+
+
+
+
+.movieImage{
+  width: 150px;
+  height: 200px;
+  
+}
+
+.movieImage{
+  position: relative;
+}
+
+.favourite{
+  position: absolute;
+  border-radius: 50px;
+   border: 3px solid transparent;
+   margin: -16px;
+}
+
+.favourite:hover{
+  
+  border: 3px solid rgb(213, 29, 29);
+}
+
+.movie-box{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin: 20px auto;
+  max-width: 70%;
+}
+
+
+.movie-details h2{
+  font-size: .6rem;
+}
+
+.movie-details h3{
+  font-size: 1rem;
+}
+
+.ratings{
+  display: flex;
+  font-weight: 500;
+  gap: 10px;
+}
+
+
+.footer{
+  width: 30%;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.footer p{
+  color: rgba(128, 128, 128, 0.815);
+  font-weight: 600;
+}
+
+.socials{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+
+.help{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.help > a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+
+
+/* 2nd */
+
+.secondbox{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 20px;
+}
+
+
+.sidebar{
+  background-color: #E2C799;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: 0 5px 5px 0;
+}
+
+.home, .movies, .tvSeries, .Logout, .upcoming {
+  display: flex;
+  gap: 10px;
+  color: white;
+  font-size: .8rem;
+}
+
+
+
+.themovieDetails{
+  padding: 10px 5% 10px 10px;
+
+}
+
+.themovieDetails p{
+  margin-top: 8px;
+}
+
+.themovieDetails h2{
+  margin-bottom: 8px;
+}
+
+.backimage{
+  border-radius: 8px;
+  width: 80%;
+  height: auto;
+}
