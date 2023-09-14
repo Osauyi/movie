@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
 import Image from 'next/image'
-import Logo from "../../public/assets/Logo.svg"
-import Upcoming from "../../public/assets/Calendar.svg"
-import Home from "../../public/assets/Home.svg"
-import Tv from "../../public/assets/TV Show.svg"
-import Play from "../../public/assets/Play.svg"
-import Logout from "../../public/assets/Logout.svg"
-import MOvie from "../../public/assets/Movie Projector.svg"
-import Imdb from "../../public/assets/imdb.svg"
+import Logo from "../../assets/Logo.svg"
+import Upcoming from "../../assets/Calendar.svg"
+import Home from "../../assets/Home.svg"
+import Tv from "../../assets/TV Show.svg"
+import Play from "../../assets/Play.svg"
+import Logout from "../../assets/Logout.svg"
+import MOvie from "../../assets/Movie Projector.svg"
+import Imdb from "../../assets/imdb.svg"
 
 export default function MovieDetails() {
 
