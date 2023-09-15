@@ -72,7 +72,7 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1', opti
           const srcs = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
         return(
         <div className='everymovie' key={movie.id} data-testid="movie-card">
-        <Link href={`/${movie.id}`}>
+        <Link href={`/movies/${movie.id}`}>
         <div className='movie-image'>
          
         <Image className='movieImage' loader={() => srcs} src = {srcs}  data-testid="movie-poster" alt='movie-poster' width={150} height={200}/>

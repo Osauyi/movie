@@ -2,16 +2,14 @@
 import React, { useState, useEffect } from 'react';
 
 import Image from 'next/image'
-import Logo from "../../../public/assets/Logo.svg"
-import Upcoming from "../../../public/assets/Calendar.svg"
-import Home from "../../../public/assets/Home.svg"
-import Tv from "../../../public/assets/TV Show.svg"
-import Play from "../../../public/assets/Play.svg"
-import Logout from "../../../public/assets/Logout.svg"
-import MOvie from "../../../public/assets/Movie Projector.svg"
-import Imdb from "../../../public/assets/imdb.svg"
-
-
+import Logo from "../../../../public/assets/Logo.svg"
+import Upcoming from "../../../../public/assets/Calendar.svg"
+import Home from "../../../../public/assets/Home.svg"
+import Tv from "../../../../public/assets/TV Show.svg"
+import Play from "../../../../public/assets/Play.svg"
+import Logout from "../../../../public/assets/Logout.svg"
+import MOvie from "../../../../public/assets/Movie Projector.svg"
+import Imdb from "../../../../public/assets/imdb.svg" 
 
 
 
